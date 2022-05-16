@@ -88,22 +88,10 @@ body {
     margin-left: -80%;
 }
 
-#radio-btn-1:checked ~ .controls .btn-1 {
-    background: none;
-}
-
-#radio-btn-2:checked ~ .controls .btn-2 {
-    background: none;
-}
-
-#radio-btn-3:checked ~ .controls .btn-3 {
-    background: none;
-}
-
-#radio-btn-4:checked ~ .controls .btn-4 {
-    background: none;
-}
-
+#radio-btn-1:checked ~ .controls .btn-1,
+#radio-btn-2:checked ~ .controls .btn-2,
+#radio-btn-3:checked ~ .controls .btn-3,
+#radio-btn-4:checked ~ .controls .btn-4,
 #radio-btn-5:checked ~ .controls .btn-5 {
     background: none;
 }
