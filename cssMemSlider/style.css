@@ -57,9 +57,14 @@ body {
     background-color: #E56B6F;
     border-radius: 50%;
     margin: 10px;
+    transition: all 0.2s;
 }
 
-.slider-wrapper input {
+.control-btn:hover {
+    transform: scale(1.3);
+}
+
+.container input {
     display: none;
 }
 
@@ -82,3 +87,31 @@ body {
 #radio-btn-5:checked ~ .slides .active-slide {
     margin-left: -80%;
 }
+
+#radio-btn-1:checked ~ .controls .btn-1 {
+    background: none;
+}
+
+#radio-btn-2:checked ~ .controls .btn-2 {
+    background: none;
+}
+
+#radio-btn-3:checked ~ .controls .btn-3 {
+    background: none;
+}
+
+#radio-btn-4:checked ~ .controls .btn-4 {
+    background: none;
+}
+
+#radio-btn-5:checked ~ .controls .btn-5 {
+    background: none;
+}
+
+/* .controls .btn-1 {
+    background: none;
+}
+
+.controls .btn-2 {
+    background: none;
+} */
