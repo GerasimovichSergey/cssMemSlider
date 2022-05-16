@@ -13,19 +13,40 @@ body {
 }
 
 .container {
-    max-width: 1220px;
+    max-width: 1200px;
     margin: 0 auto;
     font-size: 0;
+    padding: 0 20px;
 }
 
 .slider-wrapper {
+    overflow: hidden;
     margin: 0 auto;
     max-width: 700px;
+    height: 700px;
     border: 5px solid #E56B6F;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: all 0.3s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
 }
 
 .controls {
     display: flex;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .control-btn {
@@ -33,6 +54,31 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     border: 3px solid #E56B6F;
+    background-color: #E56B6F;
     border-radius: 50%;
-    margin: 1rem;
+    margin: 10px;
+}
+
+.slider-wrapper input {
+    display: none;
+}
+
+#radio-btn-1:checked ~ .slides .active-slide {
+    margin-left: 0;
+}
+
+#radio-btn-2:checked ~ .slides .active-slide {
+    margin-left: -20%;
+}
+
+#radio-btn-3:checked ~ .slides .active-slide {
+    margin-left: -40%;
+}
+
+#radio-btn-4:checked ~ .slides .active-slide {
+    margin-left: -60%;
+}
+
+#radio-btn-5:checked ~ .slides .active-slide {
+    margin-left: -80%;
 }
