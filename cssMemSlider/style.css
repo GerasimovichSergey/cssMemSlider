@@ -8,3 +8,13 @@ html {
     font-size: 10px;
 }
 
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    font-size: 0;
+}
+
+.controls {
+    font-size: 1.6rem;
+}
