@@ -64,7 +64,7 @@ body {
     transform: scale(1.3);
 }
 
-.slider-wrapper input {
+.container input {
     display: none;
 }
 
