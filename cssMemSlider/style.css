@@ -47,6 +47,11 @@ body {
     display: flex;
     margin: 0 auto;
     max-width: 700px;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
 }
 
 .control-btn {
@@ -88,10 +93,48 @@ body {
     margin-left: -80%;
 }
 
-#radio-btn-1:checked ~ .controls .btn-1,
-#radio-btn-2:checked ~ .controls .btn-2,
-#radio-btn-3:checked ~ .controls .btn-3,
-#radio-btn-4:checked ~ .controls .btn-4,
-#radio-btn-5:checked ~ .controls .btn-5 {
+#radio-btn-1:checked ~ .controls .buttons .btn-1,
+#radio-btn-2:checked ~ .controls .buttons .btn-2,
+#radio-btn-3:checked ~ .controls .buttons .btn-3,
+#radio-btn-4:checked ~ .controls .buttons .btn-4,
+#radio-btn-5:checked ~ .controls .buttons .btn-5 {
     background: none;
+}
+
+.img-title {
+    font-size: 30px;
+    color: #E56B6F;
+    display: flex;
+    width: 500%;
+}
+
+.text {
+    display: block;
+    width: 20%;
+    transition: all 0.3s;
+}
+
+.text-wrapper { 
+    max-width: 280px;
+    overflow: hidden;
+}
+
+#radio-btn-1:checked ~ .controls .text-wrapper .active-text {
+    margin-left: 0;
+}
+
+#radio-btn-2:checked ~ .controls .text-wrapper .active-text {
+    margin-left: -20%;
+}
+
+#radio-btn-3:checked ~ .controls .text-wrapper .active-text {
+    margin-left: -40%;
+}
+
+#radio-btn-4:checked ~ .controls .text-wrapper .active-text {
+    margin-left: -60%;
+}
+
+#radio-btn-5:checked ~ .controls .text-wrapper .active-text {
+    margin-left: -80%;
 }
